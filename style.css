@@ -1,0 +1,134 @@
+:root {
+    --color-bg: #96c5fa;
+    --color-primary: #000;
+    --color-secundary: #1E83F4;
+    --color-tertiary: #DDEDFE;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    color: var(--color-primary);
+}
+
+
+h1,
+h2,
+.descricao-exercicio {
+    text-align: center;
+    margin: 15px 0;
+
+}
+
+.descricao-exercicio {
+    padding: 0 40px 10px 40px;
+
+}
+
+.solucao-container {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-black);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.exercicio {
+    padding: 20px;
+    border: 1.5px solid var(--color-primary);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: var(--color-tertiary);
+}
+
+input {
+    width: 80px;
+}
+
+button {
+    padding: 8px;
+    background-color: var(--color-secundary);
+    border: 1px solid var(--color-secundary);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+button:hover {
+    border: 1px solid var(--color-secundary);
+    cursor: pointer;
+}
+
+button:active {
+
+    background-color: var(--color-white);
+    color: var(--color-secundary);
+}
+
+.resultado {
+    margin: 15px 0;
+}
+
+.white-space-pre {
+    white-space: pre-line;
+    text-align: start;
+}
+
+table {
+    border: 1px dotted var(--color-primary);
+    display: flex;
+    justify-content: center;
+
+}
+
+.exercicio-11 .descricao-exercicio {
+    border: none;
+}
+
+.exercicio-11 ul {
+    margin: 1rem 0 1rem 3rem;
+}
+
+/* Media query para telas menores */
+@media (max-width: 700px) {
+    body {
+        width: 95%;
+        padding: 0 5px;
+    }
+
+    .descricao-exercicio {
+        padding: 0 10px 10px 10px;
+        font-size: 0.98em;
+    }
+
+    .exercicio {
+        padding: 10px;
+        font-size: 0.98em;
+    }
+
+    input {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    table {
+        font-size: 0.95em;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.3em;
+    }
+}
